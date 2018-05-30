@@ -17,7 +17,7 @@ const captions = {
         }
 
         // Only Vimeo and HTML5 video supported at this point
-        if (!this.isVideo || this.isYouTube || (this.isHTML5 && !support.textTracks)) {
+        if (this.isYouTube || !this.isVideo || (this.isHTML5 && !support.textTracks)) {
             // Clear menu and hide
             if (utils.is.array(this.config.controls) && this.config.controls.includes('settings') && this.config.settings.includes('captions')) {
                 controls.setCaptionsMenu.call(this);

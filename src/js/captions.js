@@ -8,7 +8,7 @@ import i18n from './i18n';
 import support from './support';
 import utils from './utils';
 
-const captions = {
+const captions =
     // Setup captions
     setup() {
         // Requires UI support

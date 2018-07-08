@@ -53,7 +53,6 @@ class Plyr {
 
         // jQuery, NodeList or Array passed, use first element
         if ((window.jQuery && this.media instanceof jQuery) || is.nodeList(this.media) || is.array(this.media)) {
-            // eslint-disable-next-line
             this.media = this.media[0];
         }
 

@@ -425,7 +425,6 @@ const controls = {
             return;
         }
 
-        // eslint-disable-next-line no-param-reassign
         target.innerText = controls.formatTime(time, inverted);
     },
 
@@ -452,7 +451,6 @@ const controls = {
             return;
         }
 
-        // eslint-disable-next-line
         target.value = value;
 
         // Webkit range fill

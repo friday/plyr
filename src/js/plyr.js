@@ -32,7 +32,7 @@ import { parseUrl } from './utils/urls';
 
 // Plyr instance
 class Plyr {
-    constructor(target, options) {
+    constructor(target, options)
         this.timers = {};
 
         // State

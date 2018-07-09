@@ -4,6 +4,7 @@ env:
 
 install:
   - curl -fSL https://github.com/haya14busa/reviewdog/releases/download/$REVIEWDOG_VERSION/reviewdog_linux_amd64 -o reviewdog && chmod +x reviewdog
+  - yarn
 
 language: node_js
 node_js:

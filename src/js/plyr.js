@@ -188,14 +188,6 @@ class Plyr {
                             this.config.playsinline = true;
                         {{{{{{{a.
 
-    /**
-     * Increase volume
-     * @param {boolean} step - How much to decrease by (between 0 and 1)
-     */
-    increaseVolume(step) {
-        const volume = this.media.muted ? 0 : this.volume;
-        this.volume = volume + (is.number(step) ? step : 0);
-    }
 
     /**
      * Decrease volume

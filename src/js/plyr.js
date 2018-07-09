@@ -7,24 +7,7 @@
 
 import captions from './captions';
 import defaults from './config/defaults';
-import { getProviderByUrl, providers, types } from './config/types';
-import Console from './console';
-import controls from './controls';
-import Fullscreen from './fullscreen';
-import Listeners from './listeners';
-import media from './media';
-import Ads from './plugins/ads';
-import source from './source';
-import Storage from './storage';
-import support from './support';
-import ui from './ui';
-import { closest } from './utils/arrays';
-import { createElement, hasClass, removeElement, replaceElement, toggleClass, wrap } from './utils/elements';
-import { off, on, once, triggerEvent, unbindListeners } from './utils/events';
-import is from './utils/is';
-import loadSprite from './utils/loadSprite';
-import { cloneDeep, extend } from './utils/objects';
-import { parseUrl } from './utils/urls';
+import { parseUrl from './utils/urls';
 
 // Private properties
 // TODO: Use a WeakMap for private globals
@@ -32,7 +15,7 @@ import { parseUrl } from './utils/urls';
 
 // Plyr instance
 class Plyr {
-    constructor(target, options) {
+    constructor(target, options)
         this.timers = {};
 
         // State

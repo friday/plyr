@@ -1,13 +1,13 @@
 #!/bin/bash
 if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-	echo "Skipping code review. Build is not a PR."
-	exit 0
+  echo "Skipping code review. Build is not a PR."
+  exit 0
 fi
 
-if [ -z "$REVIEWDOG_GITHUB_API_TOKEN" ]; then
-	echo "Skipping code review. Token not set."
-	exit 0
-fi
+# if [ -z "$REVIEWDOG_GITHUB_API_TOKEN" ]; then
+#   echo "Skipping code review. Token not set."
+#   exit 0
+# fi
 
 echo "Branch: $TRAVIS_BRANCH"
 echo "Downloading reviewdog"

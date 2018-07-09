@@ -12,8 +12,8 @@ import {
     createElement,
     emptyElement,
     getAttributesFromSelector,
-    insertAfter,
-    removeElement,
+  insertAfter,
+  removeElement,
     toggleClass,
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
@@ -90,7 +90,7 @@ const captions = {
         let language = (this.storage.get('language') || this.config.captions.language || 'auto').toLowerCase();
 
         // Use first browser language when language is 'auto'
-        if (language === 'auto') {
+        if (language === "auto") {
             [language] = languages;
         }
 
@@ -171,7 +171,7 @@ const captions = {
         const active = is.nullOrUndefined(input) ? !toggled : input;
 
         // Update state and trigger event
-        if (active !== toggled) {
+        if (active != toggled) {
             // When passive, don't override user preferences
             if (!passive) {
                 this.captions.active = active;
@@ -221,7 +221,7 @@ const captions = {
         }
 
         if (!is.number(index)) {
-            this.debug.warn('Invalid caption argument', index);
+            this.debug.warn(`Invalid caption argument`, index);
             return;
         }
 

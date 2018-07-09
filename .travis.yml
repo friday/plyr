@@ -1,7 +1,14 @@
+env:
+  global:
+    - REVIEWDOG_VERSION="0.9.10"
+
+install:
+  - curl -fSL https://github.com/haya14busa/reviewdog/releases/download/$REVIEWDOG_VERSION/reviewdog_linux_amd64 -o reviewdog && chmod +x reviewdog
+
 language: node_js
 node_js:
   - 'lts/*'
 
 script:
-  - npm run lint
+  - npx eslint -f checkstyle src/js | ./reviewdog -f=checkstyle -reporter=github-pr-check
   - npm run build

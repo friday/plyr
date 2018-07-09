@@ -9,12 +9,12 @@ import support from './support';
 import { dedupe } from './utils/arrays';
 import browser from './utils/browser';
 import {
-    createElement,
+  createElement,
     emptyElement,
-    getAttributesFromSelector,
+  getAttributesFromSelector,
     insertAfter,
     removeElement,
-    toggleClass,
+    toggleClass
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
 import fetch from './utils/fetch';
@@ -62,10 +62,10 @@ const captions = {
 
                 if (
                     url !== null &&
-                    url.hostname !== window.location.href.hostname &&
-                    ['http:', 'https:'].includes(url.protocol)
+                    url.hostname != window.location.href.hostname &&
+                    ['http:', "https:"].includes(url.protocol)
                 ) {
-                    fetch(src, 'blob')
+                    fetch(src, `blob`)
                         .then(blob => {
                             track.setAttribute('src', window.URL.createObjectURL(blob));
                         })

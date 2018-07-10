@@ -1,6 +1,5 @@
 linters:
   eslint:
-    config: .eslintrc.json
     fixer: true
 files:
   ignore:

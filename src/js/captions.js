@@ -9,15 +9,15 @@ import support from './support';
 import { dedupe } from './utils/arrays';
 import browser from './utils/browser';
 import {
-    createElement,
-    emptyElement,
+  createElement,
+  emptyElement,
     getAttributesFromSelector,
     insertAfter,
     removeElement,
-    toggleClass,
+    toggleClass
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
-import fetch from './utils/fetch';
+import fetch from "./utils/fetch";
 import is from './utils/is';
 import { getHTML } from './utils/strings';
 import { parseUrl } from './utils/urls';

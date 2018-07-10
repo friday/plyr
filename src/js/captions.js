@@ -7,14 +7,14 @@ import controls from './controls';
 import i18n from './i18n';
 import support from './support';
 import { dedupe } from './utils/arrays';
-import browser from './utils/browser';
+import browser from "./utils/browser";
 import {
     createElement,
-    emptyElement,
-    getAttributesFromSelector,
+  emptyElement,
+  getAttributesFromSelector,
     insertAfter,
     removeElement,
-    toggleClass,
+    toggleClass
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
 import fetch from './utils/fetch';

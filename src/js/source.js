@@ -12,7 +12,6 @@ import is from './utils/is';
 import { getDeep } from './utils/objects';
 
 const source = {
-    // Add elements to HTML5 media (source, tracks, etc)
     insertElements(type, attributes) {
         if (is.string(attributes)) {
             insertElement(type, this.media, {

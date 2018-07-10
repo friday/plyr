@@ -3,18 +3,18 @@
 // TODO: Create as class
 // ==========================================================================
 
-import controls from "./controls";
+import controls from './controls';
 import i18n from './i18n';
 import support from './support';
 import { dedupe } from './utils/arrays';
 import browser from './utils/browser';
 import {
-  createElement,
-  emptyElement,
+    createElement,
+    emptyElement,
     getAttributesFromSelector,
     insertAfter,
     removeElement,
-    toggleClass
+    toggleClass,
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
 import fetch from './utils/fetch';
@@ -65,7 +65,7 @@ const captions = {
                     url.hostname != window.location.href.hostname &&
                     ['http:', 'https:'].includes(url.protocol)
                 ) {
-                    fetch(src, `blob`)
+                    fetch(src, 'blob')
                         .then(blob => {
                             track.setAttribute('src', window.URL.createObjectURL(blob));
                         })

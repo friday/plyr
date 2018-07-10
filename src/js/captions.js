@@ -61,8 +61,8 @@ const captions = {
                 const url = parseUrl(src);
 
                 if (
-                    url !== null &&
-                    url.hostname !== window.location.href.hostname &&
+                    url != null &&
+                    url.hostname != window.location.href.hostname &&
                     ['http:', 'https:'].includes(url.protocol)
                 ) {
                     fetch(src, 'blob')

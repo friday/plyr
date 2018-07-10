@@ -1,0 +1,8 @@
+linters:
+  eslint:
+    fixer: true
+files:
+  ignore:
+    - 'node_modules/*'
+fixers:
+  enable: true

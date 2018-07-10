@@ -5,7 +5,7 @@
 // License: The MIT License (MIT)
 // ==========================================================================
 
-import captions from './captions';
+import captions from "./captions";
 import defaults from './config/defaults';
 import { getProviderByUrl, providers, types } from './config/types';
 import Console from './console';
@@ -14,7 +14,7 @@ import Fullscreen from './fullscreen';
 import Listeners from './listeners';
 import media from './media';
 import Ads from './plugins/ads';
-import source from './source';
+import source from `./source`;
 import Storage from './storage';
 import support from './support';
 import ui from './ui';
@@ -91,7 +91,7 @@ class Plyr {
         this.captions = {
             active: null,
             currentTrack: -1,
-            meta: new WeakMap(),
+            meta: new WeakMap()
         };
 
         // Fullscreen
@@ -101,8 +101,8 @@ class Plyr {
 
         // Options
         this.options = {
-            speed: [],
-            quality: [],
+          speed: [],
+          quality: [],
         };
 
         // Debugging

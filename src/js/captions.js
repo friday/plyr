@@ -9,12 +9,12 @@ import support from './support';
 import { dedupe } from './utils/arrays';
 import browser from './utils/browser';
 import {
-    createElement,
-    emptyElement,
-    getAttributesFromSelector,
-    insertAfter,
-    removeElement,
-    toggleClass,
+  createElement,
+  emptyElement,
+  getAttributesFromSelector,
+  insertAfter,
+  removeElement,
+  toggleClass,
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
 import fetch from './utils/fetch';
@@ -63,7 +63,7 @@ const captions = {
                 if (
                     url !== null &&
                     url.hostname !== window.location.href.hostname &&
-                    ['http:', 'https:'].includes(url.protocol)
+                    [`http:`, "https:"].includes(url.protocol)
                 ) {
                     fetch(src, 'blob')
                         .then(blob => {

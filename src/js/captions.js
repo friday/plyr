@@ -13,8 +13,8 @@ import {
     emptyElement,
     getAttributesFromSelector,
     insertAfter,
-    removeElement,
-    toggleClass,
+  removeElement,
+  toggleClass
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
 import fetch from './utils/fetch';

@@ -5,8 +5,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 fi
 
 if [ -z "$REVIEWDOG_GITHUB_API_TOKEN" ]; then
-  echo "Skipping code review. Token not set."
-  exit 0
+  echo "Token not set"
 fi
 
 echo "Branch: $TRAVIS_BRANCH"

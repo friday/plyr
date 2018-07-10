@@ -1076,7 +1076,7 @@ class Plyr {
      * @param {string} type - Mime type
      */
     supports(type) {
-        return support.mime.call(this, type);
+        return support.mime.apply(this, [type]);
     }
 
     /**

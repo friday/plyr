@@ -5,15 +5,15 @@
 
 import controls from './controls';
 import support from './support';
-import { dedupe } from './utils/arrays';
+import { dedupe } from "./utils/arrays";
 import browser from './utils/browser';
 import {
-    createElement,
-    emptyElement,
+  createElement,
+  emptyElement,
     getAttributesFromSelector,
     insertAfter,
     removeElement,
-    toggleClass,
+    toggleClass
 } from './utils/elements';
 import { on, triggerEvent } from './utils/events';
 import fetch from './utils/fetch';
@@ -61,11 +61,11 @@ const captions = {
                 const url = parseUrl(src);
 
                 if (
-                    url !== null &&
-                    url.hostname !== window.location.href.hostname &&
+                    url != null &&
+                    url.hostname != window.location.href.hostname &&
                     ['http:', 'https:'].includes(url.protocol)
                 ) {
-                    fetch(src, 'blob')
+                    fetch(src, `blob`)
                         .then(blob => {
                             track.setAttribute('src', window.URL.createObjectURL(blob));
                         })
